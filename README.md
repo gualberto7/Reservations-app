@@ -1,72 +1,75 @@
-# Nuxt 3 Minimal Starter
+# Restaurant Reservation System
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+This project is a restaurant reservation system that allows administrators to efficiently manage reservations in real-time.
 
-Make sure to install the dependencies:
 
-```bash
-# npm
-npm install
+## Features
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+- **Reservation Management**: Administrators can create, delete, accept, or reject reservation requests.
+- **Report View**: View reservation statistics by day, week, and month.
+- **Real-Time Reservations**: Reservations are updated in real-time using sockets.io.
 
-# bun
-bun install
+
+## Technologies Used
+
+
+- **Nuxt 3**: Vue.js framework for building web applications.
+- **TailwindCSS**: CSS framework for designing user interfaces.
+- **MongoDB**: NoSQL database for data storage.
+- **Sockets.io**: Used to handle real time communication between client and server.
+
+
+#### Domain Model Diagram
+
+
+```mermaid
+flowchart TD
+   A[User] -->|creates| B(Restaurants)
+   A[User] -->|creates or request| C(Reservations)
+   B --> |has| C
 ```
 
-## Development Server
 
-Start the development server on `http://localhost:3000`:
+## Install
 
-```bash
-# npm
-npm run dev
 
-# pnpm
-pnpm run dev
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/tu-usuario/reservations-app.git
+  ```
+2. Go to root:
+  ```bash
+  cd reservations-app
+  ```
+3. Install dependencies:
+  ```bash
+  npm install
+  ```
 
-# yarn
-yarn dev
 
-# bun
-bun run dev
-```
+## Usage
 
-## Production
 
-Build the application for production:
+1. Start development server:
+  ```bash
+  npm run dev
+  ```
+2. Open the browser and go to `http://localhost:3000` in order to see the app.
 
-```bash
-# npm
-npm run build
 
-# pnpm
-pnpm run build
+## License
 
-# yarn
-yarn build
 
-# bun
-bun run build
-```
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-Locally preview production build:
 
-```bash
-# npm
-npm run preview
+## Author
 
-# pnpm
-pnpm run preview
 
-# yarn
-yarn preview
+This project is maintained by Gualberto Cuiza. Feel free to reach out if you have any questions or suggestions.
+
 
 # bun
 bun run preview

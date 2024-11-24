@@ -2,6 +2,7 @@
 
 
 This project is a restaurant reservation system that allows administrators to efficiently manage reservations in real-time.
+[DEMO VIDEO](https://drive.google.com/file/d/1sB_DyVNVgVAIlKTBhDEfgHE7M1eXhDFp/view?usp=sharing)
 
 
 ## Features
